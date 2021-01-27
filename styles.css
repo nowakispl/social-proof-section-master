@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    color: hsl(300, 43%, 22%);
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    height: 100vh;
+    padding: 100px 144px;
+}
+
+/* Heading section */
+
+.heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    width: 35%;
+}
+
+.subheading {
+    line-height: 1.5;
+    margin-top: 10px;
+    max-width: 35em;
+    width: 40%;
+}
+
+/* Rating section */
+
+.star-ratings {
+    font-weight: 700;
+    position: absolute;
+    right: 230px;
+    top: 115px;
+}
+
+.icon-star {
+    padding-right: 7px;
+}
+
+.div-stars {
+    display: inline;
+}
+
+.rating-text {
+    padding-left: 20px;
+}
+
+.rating-div {
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px 50px 20px 30px;
+}
+
+.rating-middle {
+    left: 40px;
+    position: relative;
+}
+
+.rating-bottom {
+    position: relative;
+    left: 80px;
+}
+
+/* Testimonials section */
+
+.testimonials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.testimonial-name {
+    font-weight: 700;
+}
+
+.verified-buyer {
+    color: hsl(333, 80%, 67%);
+}
+
+.testimonial-colton,
+.testimonial-irene,
+.testimonial-anne {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.5;
+    padding: 40px 30px;
+    width: 31.5%;
+}
+
+.testimonial-image {
+    border-radius: 100%;
+    float: left;
+    margin-right: 30px;
+    width: 50px;
+}
+
+.testimonial-text {
+    padding-top: 40px;
+    max-width: 35em;
+}
+
+/* Irene */
+
+.testimonial-irene {
+    position: relative;
+    top: 20px;
+}
+
+/* Anne */
+
+.testimonial-anne {
+    position: relative;
+    top: 40px;
+}
+
+/* Mobile layout */
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-image: url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100vw;
+    }
+
+    /* Heading section */
+
+    .heading {
+        font-size: 2rem;
+        margin: 0 auto;
+        max-width: 500px;
+        text-align: center;
+        padding: 70px 30px 20px;
+        width: 100%;
+    }
+
+    /* Subheading section */
+
+    .subheading {
+        font-size: 0.92rem;
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 0 20px 50px;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Rating section */
+
+    .star-ratings {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 0 20px 0 20px;
+        position: static;
+    }
+
+    .div-stars {
+        display: block;
+        padding: 15px 0 10px;
+        text-align: center;
+    }
+
+    .rating-div {
+        padding: 0;
+    }
+
+    .rating-middle {
+        position: static;
+    }
+
+    .rating-bottom {
+        position: static;
+    }
+
+    .rating-text {
+        display: block;
+        font-size: 0.8rem;
+        padding: 0;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    /* Testimonial section */
+
+    .testimonials {
+        flex-direction: column;
+        font-size: 0.84rem;
+        padding: 0 20px 70px;
+        margin-top: 50px;
+    }
+
+    .testimonial-colton,
+    .testimonial-irene,
+    .testimonial-anne {
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 40px 35px;
+        width: 100%;
+    }
+
+    .testimonial-irene,
+    .testimonial-anne {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 285px) {
+
+    /* Testimonial section */
+
+    .testimonial-image {
+        float: none;
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .testimonial-name,
+    .verified-buyer {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1255px) {
+    body {
+        padding-top: 50px;
+    }
+
+    /* Heading section */
+
+    .heading {
+        font-size: 2.4rem;
+    }
+
+    /* Subheading section */
+
+    .subheading {
+        margin-top: 20px;
+    }
+
+    /* Rating section */
+
+    .star-ratings {
+        right: 140px;
+        top: 60px;
+    }
+
+    .rating-div {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .rating-middle,
+    .rating-bottom {
+        position: static;
+    }
+
+    /* Testimonial section */
+
+    .testimonials {
+        margin-top: 30px;
+    }
+
+    .testimonial-image {
+        float: none;
+        display: block;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .testimonial-name,
+    .verified-buyer {
+        text-align: center;
+    }
+
+    .testimonial-colton,
+    .testimonial-irene,
+    .testimonial-anne {
+        padding: 25px 30px;
+    }
+
+    .testimonial-irene,
+    .testimonial-anne {
+        position: static;
+    }
+
+}
+
+@media screen and (min-width: 1500px) {
+    
+    /* Testimonial section */
+    
+    .testimonials {
+        margin-top: 10%;
+    }
+}
